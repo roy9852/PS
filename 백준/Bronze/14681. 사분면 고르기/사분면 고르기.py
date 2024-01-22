@@ -1,7 +1,5 @@
-x = int(input())
-y = int(input())
+x = [input() for i in range(2)]
+x = tuple(map(lambda x: int(int(x)/abs(int(x))), x))
 
-if x > 0 and y > 0: print(1)
-elif x < 0 and y > 0: print(2)
-elif x < 0 and y < 0: print(3)
-elif x > 0 and y < 0: print(4)
+q = {(1, 1):1, (-1, 1):2, (-1, -1):3, (1, -1):4}
+print(q[x])
