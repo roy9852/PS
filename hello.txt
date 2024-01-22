@@ -1,1 +1,2 @@
-is edit on gitgub applied to local directory?
+Is edit on github applied to local directory?
+YES!
