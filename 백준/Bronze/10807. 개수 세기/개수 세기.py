@@ -1,12 +1,12 @@
 N = int(input())
 
-# using list
-L = list(map(int, input().split()))
+# using dictionary
+D = dict()
+for i in map(int, input().split()):
+    if i in D:
+        D[i] += 1
+    else :
+        D[i] = 1
+    
 x = int(input())
-
-cnt = 0
-for i in range(N):
-    if x == L[i]:
-        cnt += 1
-
-print(cnt)
+print(0 if not(x in D) else D[x])
